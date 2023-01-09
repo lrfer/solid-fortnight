@@ -30,11 +30,12 @@ def removeEmoji(text):
 def confusion_matrix_scorer(acc,cm):
       return {
           'Acurácia ': acc,
-          'Falso verdadeiro': cm[0, 0], 
-          'Falso positivo': cm[0, 1],
-          'Falso negativo': cm[1, 0], 
-          'Verdadeiro positivo ': cm[1, 1]
+          'tn': cm[0, 0], 
+          'fp': cm[0, 1],
+          'fn': cm[1, 0], 
+          'TP': cm[1, 1]
       }
+
 
 
 def main():
